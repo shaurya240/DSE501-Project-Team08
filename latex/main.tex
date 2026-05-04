@@ -49,14 +49,18 @@
 \begin{titlepage}
 \thispagestyle{empty}
 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.25\linewidth]{clipart544030.png}
+\end{figure}
 % Reserved space at the top for a logo (replace with \includegraphics
 % or comment the \vspace if no logo is added)
 \vspace*{3.5cm}
 
 \begin{center}
-{\Large\bfseries Analysis of U.S.\ Domestic Flight Delay Causes:\\[4pt]
-An Inferential Study of Carrier, Seasonal, and Geographic\\[4pt]
-Drivers of Arrival Delays in 2024\par}
+{\Large\bfseries Analysis of U.S.\ Domestic Flight Delay Causes\\[4pt]
+\normalsize An Inferential Study of Carrier, Seasonal, and Geographic\\[4pt]
+Drivers of Flight Delays in 2024\par}
 
 \vspace{18pt}
 {\large DSE 501 Statistics for Data Analysts $|$ Spring C 2026 $|$ Team 8\par}
@@ -64,9 +68,9 @@ Drivers of Arrival Delays in 2024\par}
 \vspace{60pt}
 
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccc}
-\textbf{James Czeranko}        & \textbf{Ryan Garcia}          & \textbf{Yaksh Maulesh Pancholi}\\
-Arizona State University       & Arizona State University      & Arizona State University\\
-\texttt{jczerank@asu.edu}      & \texttt{rgarc234@asu.edu}     & \texttt{ypancho1@asu.edu}\\
+\textbf{James Czeranko}        & \textbf{\hspace{0.5cm}Ryan Garcia}          & \textbf{Yaksh Maulesh Pancholi}\\
+Arizona State University       & \hspace{0.5cm}Arizona State University      & Arizona State University\\
+\texttt{jczerank@asu.edu}      & \texttt{\hspace{0.3cm}rgarc203@asu.edu}     & \texttt{ypancho1@asu.edu}\\
 \end{tabular*}
 
 \vspace{18pt}
@@ -746,8 +750,8 @@ comparison that quantifies driver importance, a state-level tile-grid
 choropleth and bubble map that surface the regional clustering of
 delay severity, and a Census-region ANOVA that complements the carrier
 and seasonal analyses with a third axis of heterogeneity. The pipeline
-is fully reproducible: all code, data, and figures sit in the project's
-GitHub repository, organized into four sequential scripts
+is fully reproducible: all code, data, and figures sit in the
+\textbf{project's GitHub repository} \citep{team8repo}, organized into four sequential scripts
 (\texttt{01\_load\_and\_explore.py}, \texttt{02\_hypothesis\_tests.py},
 \texttt{03\_geo\_and\_models.py}, \texttt{04\_us\_maps.py}) that re-run
 end-to-end in well under a minute on a laptop.
