@@ -1,0 +1,117 @@
+{
+  "regional": {
+    "anova_F": 4.736407557206034,
+    "anova_p": 0.0036345147885079652,
+    "kruskal_H": 20.669870976669586,
+    "kruskal_p": 0.00012327257922808505,
+    "region_summary": [
+      {
+        "region": "Midwest",
+        "n_airports": 21,
+        "total_flights": 710228.0,
+        "mean_delay_rate": 0.2347,
+        "median_delay_rate": 0.2344
+      },
+      {
+        "region": "Northeast",
+        "n_airports": 16,
+        "total_flights": 586562.0,
+        "mean_delay_rate": 0.2269,
+        "median_delay_rate": 0.226
+      },
+      {
+        "region": "South",
+        "n_airports": 64,
+        "total_flights": 2011999.0,
+        "mean_delay_rate": 0.2293,
+        "median_delay_rate": 0.2306
+      },
+      {
+        "region": "West",
+        "n_airports": 30,
+        "total_flights": 1360195.0,
+        "mean_delay_rate": 0.2092,
+        "median_delay_rate": 0.2087
+      }
+    ]
+  },
+  "models": {
+    "M1": {
+      "name": "M1: month + log_volume",
+      "p": 8,
+      "r2": 0.11984802226662317,
+      "adj_r2": 0.11937976291822472,
+      "rmse": 0.11043389430267128,
+      "cv_r2_mean": 0.11833141893467199,
+      "cv_r2_std": 0.008660811443822896
+    },
+    "M2": {
+      "name": "M2: + carrier",
+      "p": 28,
+      "r2": 0.25568765110034186,
+      "adj_r2": 0.2542998409006222,
+      "rmse": 0.10155496594730429,
+      "cv_r2_mean": 0.2517084528697147,
+      "cv_r2_std": 0.009529428304360562
+    },
+    "M3": {
+      "name": "M3: + cause shares",
+      "p": 30,
+      "r2": 0.2719579074437024,
+      "adj_r2": 0.2705032778881453,
+      "rmse": 0.10043886521175734,
+      "cv_r2_mean": 0.26773944692233426,
+      "cv_r2_std": 0.013907435676460526
+    },
+    "top_coefficients": [
+      {
+        "feature": "c_AA",
+        "beta": 0.33967125650769514
+      },
+      {
+        "feature": "m_2",
+        "beta": -0.2370098221018018
+      },
+      {
+        "feature": "c_B6",
+        "beta": 0.1789971363576819
+      },
+      {
+        "feature": "c_F9",
+        "beta": 0.16345726515877215
+      },
+      {
+        "feature": "c_WN",
+        "beta": 0.15203542578310308
+      },
+      {
+        "feature": "c_UA",
+        "beta": 0.1458848523242286
+      },
+      {
+        "feature": "m_4",
+        "beta": -0.14538514686120163
+      },
+      {
+        "feature": "m_7",
+        "beta": 0.1431920197223941
+      },
+      {
+        "feature": "m_3",
+        "beta": -0.13009622898057147
+      },
+      {
+        "feature": "nas_share",
+        "beta": 0.12675266569099708
+      },
+      {
+        "feature": "c_MQ",
+        "beta": 0.12153052274517989
+      },
+      {
+        "feature": "c_ZW",
+        "beta": 0.10061370980551833
+      }
+    ]
+  }
+}

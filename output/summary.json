@@ -1,0 +1,22 @@
+{
+  "n_records":15046,
+  "n_carriers":21,
+  "n_airports":356,
+  "total_flights":5022488,
+  "total_delays":1129387,
+  "overall_delay_rate":0.2248660425,
+  "cause_counts":{
+    "carrier":349238,
+    "weather":45088,
+    "nas":304927,
+    "security":3091,
+    "late_aircraft":427038
+  },
+  "cause_minutes":{
+    "carrier":27974948,
+    "weather":5298959,
+    "nas":15866877,
+    "security":143246,
+    "late_aircraft":34861813
+  }
+}
